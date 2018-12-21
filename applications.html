@@ -1,0 +1,58 @@
+<html>
+
+<head> 
+	<meta charset="UTF-8">
+</head>
+<body>
+<p>
+	<a href="./memberdata.php">모든 멤버 데이터 json</a>
+</p>
+<p>
+	<a href="./attendancedata.php">모든 출결 데이터 json</a>
+</p>
+<p>
+	<a href="./att.php">출결 확인</a>
+</p>
+
+<p><form action="./attend.php" method="post">
+	<!--input type="text" name="u_id" placeholder="전화번호뒷자리4" --><br/>
+	<!--  input type="text" name="u_act" placeholder="출근 또는 퇴근" -->
+	<br/>
+	<fieldset>
+	<legend> 출근 또는 퇴근 선택 </legend>
+		<label><input type = "radio" name = "u_act" value ="출근"> 출근</label>
+		<label><input type = "radio" name = "u_act" value ="퇴근"> 퇴근</label>
+	<br/><br/>
+	
+	<input type="text" name="u_id" placeholder="전화번호뒷자리4" ><br/>
+	<!--  input type="text" name="u_act" placeholder="출근 또는 퇴근" -->
+<p>
+	<input type="submit" value="출석"/>
+</p>
+    </fieldset>
+	</form>
+</p>
+<p><form action="./test.php" method="post">
+	<!--input type="text" name="u_id" placeholder="전화번호뒷자리4" --><br/>
+	<!--  input type="text" name="u_act" placeholder="출근 또는 퇴근" -->
+	<br/>
+	<fieldset>
+	<legend> 출근 또는 퇴근 선택 </legend>
+		<label><input type = "radio" name = "mtd" value ="push"> push</label>
+		<label><input type = "radio" name = "mtd" value ="pop">pop</label>
+		<label><input type = "radio" name = "mtd" value ="at"> at</label>
+	<br/><br/>
+	
+	<input type="text" name="val" placeholder="id 넘버" ><br/>
+	<!--  input type="text" name="u_act" placeholder="출근 또는 퇴근" -->
+<p>
+	<input type="submit" value="전송"/>
+</p>
+    </fieldset>
+	</form>
+</p>
+<p>
+	<a href="./test.php">Test</a>
+</p>
+</body>
+</html>
